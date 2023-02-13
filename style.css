@@ -33,7 +33,7 @@ body{
     height: 100%;
     z-index:1;
     background: rgba(0,0,0,0.6);
-    box-shadow: inset 120px 100px 250px #000000,  inset -120px 100px 250px #000000;
+    box-shadow: inset 0px 0px 150px #000000,  inset 0px 0px 150px #000000; 
 }
 .showcase-top{
 position: relative;
@@ -159,7 +159,6 @@ z-index: 2;
             row-gap: 3rem;
             justify-content: center;
             align-items: center;
-          
             padding: 3rem;
 
         }
@@ -241,7 +240,164 @@ z-index: 2;
             height: 200px;
             margin-left: 0;
         }
+        .faq-1{
+            border-bottom:4px solid #303030; ;
+        }
+        
+        .faq-1 .container h1{
+            color: #fff;
+            text-align: center;
+          }
+          
+          details{
+            background-color: #303030;
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: .5rem;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 1rem auto;
+          }
+          
+          summary {
+            padding: .5em 1.3rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;  
+            transition: height 1s ease;
+            
+          }
+          
+          summary::-webkit-details-marker {
+            display: none;
+          }
+          
+          summary:after{
+            content: "\002B";
+          }
+          
+          details[open] summary {
+              border-bottom: 1px solid #aaa;
+              margin-bottom: .5em;
+              
+          }
+          
+          details[open] summary:after{
+            content: "\00D7";
+          }
+          
+          details[open] div{
+            padding: .5em 1em;
+          }
+        .subcribtion {
+            margin-top: 4rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .subcribtion h4{
+            font-size: 19px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        color: #FFFFFF;
+        }
+        .subcribtion input{
+            z-index: 2;
+            width: 600px;
+            height: 50px;
+            margin-left: 0;
+            top: 0px;
+            padding: 1rem;
+            border: none;
+        }
+        .subcribtion #email-btn{
+            color: #FFFFFF;
+            background-color: var(--primary-color);
+            height: 50px;
+             width: 150px;
+             margin-top: 0;
+            border: none;
+            cursor: pointer;
+          
+        }
+        .subcribtion #email-btn:hover{
+            opacity: .6;
+            background-color: var(--primary-color);
+
+        }
+        .footer{
+            max-width: 75%;
+            margin: 1rem auto;
+            overflow: auto;
+        }
+        .footer p{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .footer .footer-cols {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap:2rem;
+            column-gap: 2rem;
+            justify-content: center;
+            
+        }
+        .footer .footer-cols li{
+         list-style: none;
+         line-height: 1.9;
+         
+        }
+        .footer .footer-cols ul li a{
+         list-style: none;
+       
+         text-decoration: none;
+         font-style: normal;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 17px;
+         color: #757575;
+         
+
+        }
+        .footer-btn {
+            margin-top: 4rem;
+        }
+        .footer-btn .eng-btn{
+            margin-right: 1px;
+            width: 100px;
+            height: 30px;
+            color: #ffff;
+            border: 1px solid #757575;
+           text-align: center;
+           font-size: .7rem;
+           text-decoration: none;
+           padding: 0.4rem 1.3rem .6rem;
+           margin-left: 11rem;
+        }
+        .footer-btn p{
+            margin-top: 2rem;
+            font-size: 13px;
+            margin-left: 11rem;
+            margin-bottom: 2rem;
+        }
+
    @media (max-width:600px){
+    .showcase::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:1;
+        background: rgba(0,0,0,0.6);
+        box-shadow: inset 0px 0px 100px #000000,  inset 0px 0px 100px #000000; 
+    }
+
     .showcase-top .eng-btn{
         margin-right: 100px;
         width: 80px;
@@ -375,5 +531,104 @@ z-index: 2;
     }
     .profile-about .profile-about-row .content  .body-1-paragraph{
         line-height: 25px;
+    }
+    details{
+        background-color: #303030;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: .4rem auto;
+      }
+      
+      summary {
+        padding: .5em 1.3rem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;  
+        transition: height 1s ease;
+        
+      }
+      
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      
+      summary:after{
+        content: "\002B";
+      }
+      
+      details[open] summary {
+          border-bottom: 1px solid #aaa;
+          margin-bottom: .5em;
+          
+      }
+      
+      details[open] summary:after{
+        content: "\00D7";
+      }
+      
+      details[open] div{
+        padding: .5em 1em;
+      }
+
+    .subcribtion h4{
+        font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    font-weight: 300;
+    }
+    .subcribtion input{
+        z-index: 2;
+        width: 240px;
+        height: 50px;
+        margin-left: 0;
+        top: 0px;
+        padding: 1rem;
+        border: none;
+    }
+    .subcribtion #email-btn{
+        color: #FFFFFF;
+        background-color: var(--primary-color);
+        height: 50px;
+         width: 100px;
+         margin-top: 0;
+        border: none;
+        cursor: pointer;
+      
+    }
+    .footer .footer-cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:2rem;
+        column-gap: 2rem;
+        justify-content: center;
+        margin-top: 1rem;
+        
+    }
+    .footer-btn .eng-btn{
+        margin-right: 120px;
+        width: 100px;
+        height: 30px;
+        color: #ffff;
+        border: 1px solid #ffff;
+       text-align: center;
+       font-size: .7rem;
+       text-decoration: none;
+       padding: 0.4rem 1.3rem .4rem;
+       margin-left: 3rem;
+       margin-top: 4rem;
+    }
+    .footer-btn p{
+        margin-top: 2rem;
+        font-size: 13px;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    
     }
    }
