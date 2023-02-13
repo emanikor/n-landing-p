@@ -32,8 +32,8 @@ body{
     width: 100%;
     height: 100%;
     z-index:1;
-    background: rgb(0,0,0,0.6);
-    box-shadow: inset 80px 60px 250px #000000,  inset -80px -60px 250px #000000;
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 120px 100px 250px #000000,  inset -120px 100px 250px #000000;
 }
 .showcase-top{
 position: relative;
